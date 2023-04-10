@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.sp
 import com.nassafy.aro.R
 
 @Composable
-fun ServiceNotSelectedDisplayLayout(displayedString: String) {
+fun ServiceNotSelectedDisplayLayout(displayedText: String, displayedInfromText: String) {
     Column(
         Modifier.fillMaxHeight(),
         horizontalAlignment = Alignment.CenterHorizontally
@@ -24,7 +24,7 @@ fun ServiceNotSelectedDisplayLayout(displayedString: String) {
         Spacer(Modifier.fillMaxHeight(0.2f))
         Box() {
             Text(
-                text = displayedString,
+                text = displayedText,
                 style = TextStyle(
                     fontFamily = NanumSqaureFont,
                     fontWeight = FontWeight.Bold,
@@ -36,7 +36,7 @@ fun ServiceNotSelectedDisplayLayout(displayedString: String) {
         }
         Box(modifier = Modifier.padding(top = 8.dp)) {
             Text(
-                text = stringResource(id = R.string.my_page_not_select_service_inform_textview_text),
+                text = displayedInfromText,
                 style = TextStyle(
                     fontFamily = NanumSqaureFont,
                     fontWeight = FontWeight.Light,

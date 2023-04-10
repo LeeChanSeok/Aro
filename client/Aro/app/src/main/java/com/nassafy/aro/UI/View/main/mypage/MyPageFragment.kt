@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -332,7 +333,10 @@ class MyPageFragment : BaseFragment<FragmentMyPageBinding>(FragmentMyPageBinding
                                                 )
                                             } // End of true
                                             false -> {
-                                                ServiceNotSelectedDisplayLayout(getString(R.string.service_aurora_not_selected_textview_text))
+                                                ServiceNotSelectedDisplayLayout(
+                                                    getString(R.string.service_aurora_not_selected_textview_text),
+                                                    stringResource(id = R.string.my_page_not_select_service_inform_textview_text)
+                                                )
                                             } // End of false
                                         } // End of when
                                     } // End of else
@@ -343,7 +347,10 @@ class MyPageFragment : BaseFragment<FragmentMyPageBinding>(FragmentMyPageBinding
                                     true -> {
                                         when (favoriteMeteorCountry) {
                                             null -> {
-                                                ServiceNotSelectedDisplayLayout(getString(R.string.service_meteor_not_selected_textview_text))
+                                                ServiceNotSelectedDisplayLayout(
+                                                    getString(R.string.my_page_not_select_meteor_favorite_country_text),
+                                                    getString(R.string.my_page_not_select_meteor_favorite_country_inform_text)
+                                                )
                                             }
                                             else -> {
                                                 Box(
@@ -422,7 +429,10 @@ class MyPageFragment : BaseFragment<FragmentMyPageBinding>(FragmentMyPageBinding
                                         }
                                     } // End of true
                                     false -> {
-                                        ServiceNotSelectedDisplayLayout(getString(R.string.service_meteor_not_selected_textview_text))
+                                        ServiceNotSelectedDisplayLayout(
+                                            getString(R.string.service_meteor_not_selected_textview_text),
+                                            stringResource(id = R.string.my_page_not_select_service_inform_textview_text)
+                                        )
                                     } // End of false
                                 } // End of when
                             } // End of when(page) : page -> 1

@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ViewCompositionStrategy
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.core.view.isGone
@@ -380,9 +381,8 @@ class MyPageFavoriteRegisterFragment :
                                     }
                                     false -> {
                                         ServiceNotSelectedDisplayLayout(
-                                            displayedString = getString(
-                                                R.string.service_aurora_not_selected_textview_text
-                                            )
+                                            displayedText = getString(R.string.service_aurora_not_selected_textview_text),
+                                            displayedInfromText = stringResource(id = R.string.my_page_not_select_service_inform_textview_text)
                                         )
                                     }
                                 }
@@ -398,9 +398,10 @@ class MyPageFavoriteRegisterFragment :
                                     } // End of when (myPageFavoriteRegisterFragmentViewModel.isAuroraServiceSelected) -> true
                                     false -> {
                                         ServiceNotSelectedDisplayLayout(
-                                            displayedString = getString(
+                                            displayedText = getString(
                                                 R.string.service_meteor_not_selected_textview_text
-                                            )
+                                            ),
+                                            displayedInfromText = stringResource(id = R.string.my_page_not_select_service_inform_textview_text)
                                         )
                                     } // End of myPageFavoriteRegisterFragmentViewModel.isAuroraServiceSelected -> false
                                 } // End of when (myPageFavoriteRegisterFragmentViewModel.isAuroraServiceSelected)

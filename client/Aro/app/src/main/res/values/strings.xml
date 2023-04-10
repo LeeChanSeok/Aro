@@ -108,6 +108,11 @@
     <string name="my_page_not_select_service_title_textview_text">아직 서비스를 등록하지 않으셨네요!</string>
     <string name="my_page_not_select_service_inform_textview_text">서비스를 등록하고 알림을 받아보세요</string>
 
+    <!--관심 위치 등록을 하지 않았을 떄-->
+    <string name="my_page_not_select_aurora_favorite_place_text">아직 오로라 관심 위치를 등록하지 않으셨네요!</string>
+    <string name="my_page_not_select_aurora_favorite_place_inform_text">관심 위치를 등록하고 알림을 받아보세요</string>
+    <string name="my_page_not_select_meteor_favorite_country_text">아직 유성우 관심국가를 등록하지 않으셨네요!</string>
+    <string name="my_page_not_select_meteor_favorite_country_inform_text">관심 국가를 등록하고 알림을 받아보세요</string>
 
     <!-- 서비스 변경 -->
     <string name="service_modify_no_have_service_dialog_title_textview_text">알림</string>

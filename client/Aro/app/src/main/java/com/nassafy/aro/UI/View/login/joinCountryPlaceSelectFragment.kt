@@ -343,9 +343,8 @@ class JoinCountryPlaceSelectFragment : BaseFragment<FragmentAroCountryPlaceSelec
                                     }
                                     false -> {
                                         ServiceNotSelectedDisplayLayout(
-                                            displayedString = stringResource(
-                                                R.string.service_aurora_not_selected_textview_text
-                                            )
+                                            stringResource(R.string.service_aurora_not_selected_textview_text),
+                                            stringResource(R.string.my_page_not_select_service_inform_textview_text)
                                         )
                                     }
                                 }
@@ -361,9 +360,10 @@ class JoinCountryPlaceSelectFragment : BaseFragment<FragmentAroCountryPlaceSelec
                                     }
                                     false -> {
                                         ServiceNotSelectedDisplayLayout(
-                                            displayedString = stringResource(
+                                            stringResource(
                                                 R.string.service_meteor_not_selected_textview_text
-                                            )
+                                            ),
+                                            stringResource(R.string.my_page_not_select_service_inform_textview_text)
                                         )
                                     }
                                 }

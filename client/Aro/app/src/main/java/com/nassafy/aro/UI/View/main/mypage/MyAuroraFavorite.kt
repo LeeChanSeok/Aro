@@ -134,7 +134,10 @@ fun MyAuroraFavorite(
             } // End of LazyColum
         } // End of when (auroraFavoriteList.size > 0) -> true
         false -> {
-            ServiceNotSelectedDisplayLayout(stringResource(R.string.service_aurora_not_selected_textview_text))
+            ServiceNotSelectedDisplayLayout(
+                stringResource(R.string.my_page_not_select_aurora_favorite_place_text),
+                stringResource(id = R.string.my_page_not_select_aurora_favorite_place_inform_text)
+            )
         } // End of when (auroraFavoriteList.size > 0) -> false
     } // End of when (auroraFavoriteList.size > 0)
 
