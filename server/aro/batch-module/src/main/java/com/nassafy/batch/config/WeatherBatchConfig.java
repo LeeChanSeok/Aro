@@ -115,7 +115,7 @@ public class WeatherBatchConfig {
         return coordinates -> openWeatherMapService.fetchWeatherData(coordinates[0], coordinates[1]);
     }
 
-    // 데이터 삭제 및 저장
+    // 날씨 데이터 삭제 및 저장
     @Bean
     @Transactional()
     public ItemWriter<List<Weather>> weatherDataWriter(){
