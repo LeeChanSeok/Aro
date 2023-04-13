@@ -117,7 +117,7 @@ public class WeatherBatchConfig {
 
     // 날씨 데이터 삭제 및 저장
     @Bean
-    @Transactional()
+    @Transactional
     public ItemWriter<List<Weather>> weatherDataWriter(){
         weatherRepository.deleteAllInBatch();
         return items -> {
